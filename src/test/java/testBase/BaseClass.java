@@ -1,6 +1,7 @@
 package testBase;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -129,7 +130,8 @@ public class BaseClass {
         String targetFilePath=System.getProperty("user.dir")+"\\screenshots\\" + tname + "_" + timeStamp + ".png";
         File targetFile=new File(targetFilePath);
 
-        sourceFile.renameTo(targetFile);
+        //sourceFile.renameTo(targetFile);
+        FileUtils.copyFile(sourceFile,targetFile);
 
         return targetFilePath;
 

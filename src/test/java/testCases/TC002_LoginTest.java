@@ -19,7 +19,7 @@ public class TC002_LoginTest extends BaseClass {
             hm.clickLogin();
 
             LoginPage loginPage = new LoginPage(driver);
-            loginPage.setPassword(prop.getProperty("passowrd"));
+            loginPage.setPassword(prop.getProperty("password"));
             loginPage.setEmail(prop.getProperty("email"));
             loginPage.clickLogin();
 

@@ -1,6 +1,6 @@
 package testBase;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
+
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.logging.log4j.LogManager;
@@ -20,13 +20,14 @@ import org.testng.annotations.Parameters;
 
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.net.URL;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.util.Date;
 import java.util.Properties;
+
+import static Utilities.WebDriverUtility.*;
 
 public class BaseClass {
 
@@ -35,8 +36,14 @@ public class BaseClass {
     public Properties prop;
     @BeforeClass(groups={"Regression","Master","Sanity","Datadriven"})
     @Parameters({"os","browser"})
-        public void setUp(String os,String browser ) throws IOException {
-        FileInputStream fis=new FileInputStream("./src//test//resources//config.properties");
+        public WebDriver setUp(String os, String browser ) throws IOException {
+        FileInputStream fis;
+        if(System.getProperty("env")!=null) {
+            String env = System.getProperty("env");
+           fis= new FileInputStream("./src//test//resources//" + env + ".properties");
+        }
+        else
+            fis = new FileInputStream("./src//test//resources//dev.properties");
         prop=new Properties();
         prop.load(fis);
         log= LogManager.getLogger(this.getClass());
@@ -51,7 +58,7 @@ public class BaseClass {
                 cap.setPlatform(Platform.MAC);
             } else {
                 System.out.println("No Matching OS");
-                return;
+                return null;
             }
 
                 switch (browser.toLowerCase()) {
@@ -63,7 +70,7 @@ public class BaseClass {
                         break;
                     default:
                         System.out.println("No matching browser name....");
-                        return;
+                        return null;
                 }
 
             driver=new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"),cap);
@@ -72,28 +79,35 @@ public class BaseClass {
         if(prop.getProperty("execution_environment").equalsIgnoreCase("local")) {
             switch (browser.toLowerCase()) {
                 case "chrome":
-                    WebDriverManager.chromedriver().setup();
-                    driver = new ChromeDriver();
-                    break;
+                    setDriver( new ChromeDriver());
+                  //  driver = new ChromeDriver();
+                break;
                 case "edge":
-                    WebDriverManager.edgedriver().setup();
-                    driver = new EdgeDriver();
+                   setDriver( new EdgeDriver());
+                   // driver = new EdgeDriver();
                     break;
                 case "firefox":
-                    WebDriverManager.firefoxdriver().setup();
-                    driver = new FirefoxDriver();
+                    setDriver( new FirefoxDriver());
+                    //driver = new FirefoxDriver();
                     break;
                 default:
                     System.out.println("Invalid browser name....");
-                    return;
+                    return null;
             }
         }
-        driver.manage().deleteAllCookies();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-        driver.get(prop.getProperty("appURL1"));
-        driver.manage().window().maximize();
+        //WebDriverUtility.setDriver(driver);
+        getDriver().manage().deleteAllCookies();
+        getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        //driver = WebDriverUtility.getDriver();
+        getDriver().get("https://example.com");
+        getDriver().get(prop.getProperty("appURL1"));
+        getDriver().manage().window().maximize();
+        driver=getDriver();
+        return driver;
 
     }
+
+
     @AfterClass(groups={"Regression","Master","Sanity","Datadriven"})
     public void tearDown()
     {

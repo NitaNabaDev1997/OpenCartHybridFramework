@@ -21,12 +21,12 @@ public class HomePage extends BasePage{
 
     public void clickMyAccount()
     {
-        linkMyAccount.click();
+        click(linkMyAccount);
     }
 
     public void clickRegister()
     {
-        registerAccount.click();
+        click(registerAccount);
     }
 
     public void clickLogin()

@@ -1,0 +1,62 @@
+2025-04-29 19:23:05 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-04-29 19:23:05 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-04-29 19:23:05 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-04-29 19:23:05 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2025-04-29 19:23:05 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-04-29 19:23:05 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-04-29 19:23:05 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-04-29 19:23:05 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2025-04-29 19:23:05 INFO  TC003_LoginDDT:43 - ****Starting TC003_LoginDDT****** 
+2025-04-29 19:23:08 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-04-29 19:23:08 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2025-04-29 19:23:08 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-04-29 19:23:08 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2025-04-29 19:23:08 DEBUG ZipPackage:607 - Save content types part
+2025-04-29 19:23:08 DEBUG ZipPackage:611 - Save package relationships
+2025-04-29 19:23:08 DEBUG ZipPackage:625 - Save part 'docProps/app.xml'
+2025-04-29 19:23:08 DEBUG ZipPackage:625 - Save part 'docProps/core.xml'
+2025-04-29 19:23:08 DEBUG ZipPackage:625 - Save part 'xl/printerSettings/printerSettings1.bin'
+2025-04-29 19:23:08 DEBUG ZipPackage:625 - Save part 'xl/sharedStrings.xml'
+2025-04-29 19:23:08 DEBUG ZipPackage:625 - Save part 'xl/styles.xml'
+2025-04-29 19:23:08 DEBUG ZipPackage:625 - Save part 'xl/theme/theme1.xml'
+2025-04-29 19:23:08 DEBUG ZipPackage:625 - Save part 'xl/workbook.xml'
+2025-04-29 19:23:08 DEBUG ZipPackage:625 - Save part 'xl/worksheets/sheet1.xml'
+2025-04-29 19:23:08 INFO  TC003_LoginDDT:97 - ****Finished TC003_LoginDDT****** 
+2025-04-29 19:23:11 INFO  Utils:112 - [TestNG] Time taken by org.testng.internal.ExitCodeListener@6b4a4e40: 1 ms
+2025-05-20 14:16:11 DEBUG TestNG:82 - suiteXmlPath: "D:\OpenCartHybridFramework\master.xml"
+2025-05-20 14:16:11 INFO  Utils:112 - [TestNG] Running:
+  D:\OpenCartHybridFramework\master.xml
+
+2025-05-20 14:16:21 INFO  TC001_AccountRegistrationTest:18 - ***String Testcases****
+2025-05-20 14:18:16 DEBUG TestNG:82 - suiteXmlPath: "D:\OpenCartHybridFramework\master.xml"
+2025-05-20 14:18:17 INFO  Utils:112 - [TestNG] Running:
+  D:\OpenCartHybridFramework\master.xml
+
+2025-05-20 14:18:22 INFO  TC001_AccountRegistrationTest:18 - ***String Testcases****
+2025-05-20 14:20:31 DEBUG TestNG:82 - suiteXmlPath: "D:\OpenCartHybridFramework\master.xml"
+2025-05-20 14:20:31 INFO  Utils:112 - [TestNG] Running:
+  D:\OpenCartHybridFramework\master.xml
+
+2025-05-20 14:20:36 INFO  TC001_AccountRegistrationTest:18 - ***String Testcases****
+2025-05-20 14:20:43 INFO  TC002_LoginTest:15 - ****Starting TC002_LoginTest*******
+2025-05-20 14:25:24 DEBUG TestNG:82 - suiteXmlPath: "D:\OpenCartHybridFramework\master.xml"
+2025-05-20 14:25:25 INFO  Utils:112 - [TestNG] Running:
+  D:\OpenCartHybridFramework\master.xml
+
+2025-05-20 14:25:31 INFO  TC001_AccountRegistrationTest:18 - ***String Testcases****
+2025-05-20 14:25:31 INFO  TC001_AccountRegistrationTest:21 - Clicked on MyAccount link
+2025-05-20 14:25:32 INFO  TC001_AccountRegistrationTest:23 - Clicked on Register link
+2025-05-20 14:25:32 INFO  TC001_AccountRegistrationTest:27 - Providing customer details.......
+2025-05-20 14:25:34 INFO  TC001_AccountRegistrationTest:53 - Validating expected message......
+2025-05-20 14:25:34 INFO  TC001_AccountRegistrationTest:62 - Finished account registration........
+2025-05-20 14:25:39 INFO  TC002_LoginTest:15 - ****Starting TC002_LoginTest*******
+2025-05-20 14:25:41 INFO  TC002_LoginTest:30 - ****Finished TC002_LoginTest*******
+2025-05-20 14:26:20 DEBUG TestNG:82 - suiteXmlPath: "D:\OpenCartHybridFramework\master.xml"
+2025-05-20 14:26:21 INFO  Utils:112 - [TestNG] Running:
+  D:\OpenCartHybridFramework\master.xml
+
+2025-05-20 14:26:25 INFO  TC001_AccountRegistrationTest:18 - ***String Testcases****
+2025-05-20 14:26:26 INFO  TC001_AccountRegistrationTest:21 - Clicked on MyAccount link
+2025-05-20 14:26:26 INFO  TC001_AccountRegistrationTest:23 - Clicked on Register link
+2025-05-20 14:26:26 INFO  TC001_AccountRegistrationTest:27 - Providing customer details.......
+2025-05-20 14:26:28 INFO  TC001_AccountRegistrationTest:53 - Validating expected message......

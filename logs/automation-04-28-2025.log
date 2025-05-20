@@ -1,0 +1,66 @@
+2025-04-28 21:13:53 INFO  TC001_AccountRegistrationTest:20 - Clicked on MyAccount link
+2025-04-28 21:13:53 INFO  TC001_AccountRegistrationTest:20 - Clicked on MyAccount link
+2025-04-28 21:16:41 DEBUG TestNG:82 - suiteXmlPath: "D:\OpenCartHybridFramework\crossbrowsertest.xml"
+2025-04-28 21:16:41 INFO  Utils:112 - [TestNG] Running:
+  D:\OpenCartHybridFramework\crossbrowsertest.xml
+
+2025-04-28 21:16:46 INFO  TC001_AccountRegistrationTest:17 - ***String Testcases****
+2025-04-28 21:16:46 INFO  TC001_AccountRegistrationTest:17 - ***String Testcases****
+2025-04-28 21:16:46 INFO  TC001_AccountRegistrationTest:20 - Clicked on MyAccount link
+2025-04-28 21:16:46 INFO  TC001_AccountRegistrationTest:20 - Clicked on MyAccount link
+2025-04-28 21:16:51 INFO  TC001_AccountRegistrationTest:22 - Clicked on Register link
+2025-04-28 21:16:51 INFO  TC001_AccountRegistrationTest:26 - Providing customer details.......
+2025-04-28 21:18:43 DEBUG TestNG:82 - suiteXmlPath: "D:\OpenCartHybridFramework\master.xml"
+2025-04-28 21:18:43 INFO  Utils:112 - [TestNG] Running:
+  D:\OpenCartHybridFramework\master.xml
+
+2025-04-28 21:18:47 INFO  TC001_AccountRegistrationTest:17 - ***String Testcases****
+2025-04-28 21:18:47 INFO  TC001_AccountRegistrationTest:20 - Clicked on MyAccount link
+2025-04-28 21:18:47 INFO  TC001_AccountRegistrationTest:22 - Clicked on Register link
+2025-04-28 21:18:47 INFO  TC001_AccountRegistrationTest:26 - Providing customer details.......
+2025-04-28 21:18:49 INFO  TC001_AccountRegistrationTest:52 - Validating expected message......
+2025-04-28 21:18:49 INFO  TC001_AccountRegistrationTest:62 - Finished account registration........
+2025-04-28 21:18:52 INFO  TC002_LoginTest:15 - ****Starting TC002_LoginTest*******
+2025-04-28 21:18:53 INFO  TC002_LoginTest:30 - ****Finished TC002_LoginTest*******
+2025-04-28 21:22:03 DEBUG TestNG:82 - suiteXmlPath: "D:\OpenCartHybridFramework\crossbrowsertest.xml"
+2025-04-28 21:22:03 INFO  Utils:112 - [TestNG] Running:
+  D:\OpenCartHybridFramework\crossbrowsertest.xml
+
+2025-04-28 21:22:07 INFO  TC001_AccountRegistrationTest:17 - ***String Testcases****
+2025-04-28 21:22:07 INFO  TC001_AccountRegistrationTest:20 - Clicked on MyAccount link
+2025-04-28 21:22:07 INFO  TC001_AccountRegistrationTest:22 - Clicked on Register link
+2025-04-28 21:22:07 INFO  TC001_AccountRegistrationTest:26 - Providing customer details.......
+2025-04-28 21:22:09 INFO  TC001_AccountRegistrationTest:52 - Validating expected message......
+2025-04-28 21:22:09 INFO  TC001_AccountRegistrationTest:62 - Finished account registration........
+2025-04-28 21:22:14 INFO  TC001_AccountRegistrationTest:17 - ***String Testcases****
+2025-04-28 21:22:14 INFO  TC001_AccountRegistrationTest:20 - Clicked on MyAccount link
+2025-04-28 21:22:15 INFO  TC001_AccountRegistrationTest:22 - Clicked on Register link
+2025-04-28 21:22:15 INFO  TC001_AccountRegistrationTest:26 - Providing customer details.......
+2025-04-28 21:22:16 INFO  TC001_AccountRegistrationTest:52 - Validating expected message......
+2025-04-28 21:22:16 INFO  TC001_AccountRegistrationTest:62 - Finished account registration........
+2025-04-28 21:23:02 DEBUG TestNG:82 - suiteXmlPath: "D:\OpenCartHybridFramework\crossbrowsertest.xml"
+2025-04-28 21:23:02 INFO  Utils:112 - [TestNG] Running:
+  D:\OpenCartHybridFramework\crossbrowsertest.xml
+
+2025-04-28 21:23:07 INFO  TC001_AccountRegistrationTest:17 - ***String Testcases****
+2025-04-28 21:23:07 INFO  TC001_AccountRegistrationTest:17 - ***String Testcases****
+2025-04-28 21:23:07 INFO  TC001_AccountRegistrationTest:20 - Clicked on MyAccount link
+2025-04-28 21:23:07 INFO  TC001_AccountRegistrationTest:20 - Clicked on MyAccount link
+2025-04-28 21:55:52 DEBUG TestNG:82 - suiteXmlPath: "D:\OpenCartHybridFramework\crossbrowsertest.xml"
+2025-04-28 21:55:52 INFO  Utils:112 - [TestNG] Running:
+  D:\OpenCartHybridFramework\crossbrowsertest.xml
+
+2025-04-28 21:55:57 INFO  TC001_AccountRegistrationTest:17 - ***String Testcases****
+2025-04-28 21:55:57 INFO  TC001_AccountRegistrationTest:17 - ***String Testcases****
+2025-04-28 21:55:57 INFO  TC001_AccountRegistrationTest:20 - Clicked on MyAccount link
+2025-04-28 21:55:57 INFO  TC001_AccountRegistrationTest:20 - Clicked on MyAccount link
+2025-04-28 22:04:40 DEBUG TestNG:82 - suiteXmlPath: "D:\OpenCartHybridFramework\master.xml"
+2025-04-28 22:04:40 INFO  Utils:112 - [TestNG] Running:
+  D:\OpenCartHybridFramework\master.xml
+
+2025-04-28 22:04:45 INFO  TC001_AccountRegistrationTest:18 - ***String Testcases****
+2025-04-28 22:04:45 INFO  TC001_AccountRegistrationTest:21 - Clicked on MyAccount link
+2025-04-28 22:04:46 INFO  TC001_AccountRegistrationTest:23 - Clicked on Register link
+2025-04-28 22:04:46 INFO  TC001_AccountRegistrationTest:27 - Providing customer details.......
+2025-04-28 22:04:47 INFO  TC001_AccountRegistrationTest:53 - Validating expected message......
+2025-04-28 22:04:47 INFO  TC001_AccountRegistrationTest:61 - Finished account registration........

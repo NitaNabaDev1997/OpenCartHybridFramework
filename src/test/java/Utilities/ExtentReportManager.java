@@ -32,6 +32,7 @@ public class ExtentReportManager implements ITestListener {
     public ExtentReports extent;
     public ExtentTest test;
     String repName;
+    ThreadLocal<ExtentTest> extentTest= new ThreadLocal<>();
     public void onStart(ITestContext testContext) {
 
 		/*SimpleDateFormat df=new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss");
@@ -65,37 +66,44 @@ public class ExtentReportManager implements ITestListener {
         if(!includedGroups.isEmpty()) {
             extent.setSystemInfo("Groups", includedGroups.toString());
         }
+
+        extentTest.set(test);
     }
 
     public void onTestSuccess(ITestResult result) {
 
         test = extent.createTest(result.getTestClass().getName());
-        test.assignCategory(result.getMethod().getGroups()); // to display groups in report
-        test.log(Status.PASS,result.getName()+" got successfully executed");
+        extentTest.set(test);
+        extentTest.get().assignCategory(result.getMethod().getGroups()); // to display groups in report
+        extentTest.get().log(Status.PASS,result.getName()+" got successfully executed");
+
 
     }
 
     public void onTestFailure(ITestResult result) {
         test = extent.createTest(result.getTestClass().getName());
-        test.assignCategory(result.getMethod().getGroups());
+        extentTest.set(test);
+        extentTest.get().assignCategory(result.getMethod().getGroups());
 
-        test.log(Status.FAIL,result.getName()+" got failed");
-        test.log(Status.INFO, result.getThrowable().getMessage());
+        extentTest.get().log(Status.FAIL,result.getName()+" got failed");
+        extentTest.get().log(Status.INFO, result.getThrowable().getMessage());
 
         try {
             String imgPath = new BaseClass().captureScreen(result.getName());
-            test.addScreenCaptureFromPath(imgPath);
+            extentTest.get().addScreenCaptureFromPath(imgPath);
 
         } catch (IOException e1) {
             e1.printStackTrace();
         }
+
     }
 
     public void onTestSkipped(ITestResult result) {
         test = extent.createTest(result.getTestClass().getName());
-        test.assignCategory(result.getMethod().getGroups());
-        test.log(Status.SKIP, result.getName()+" got skipped");
-        test.log(Status.INFO, result.getThrowable().getMessage());
+        extentTest.set(test);
+        extentTest.get().assignCategory(result.getMethod().getGroups());
+        extentTest.get().log(Status.SKIP, result.getName()+" got skipped");
+        extentTest.get().log(Status.INFO, result.getThrowable().getMessage());
     }
 
     public void onFinish(ITestContext testContext) {

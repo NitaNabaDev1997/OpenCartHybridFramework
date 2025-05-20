@@ -12,7 +12,7 @@
     </groups>
 
     <listeners>
-        <listener class-name="Utilities.ExtentReportManager"></listener>
+        <listener class-name="Utilities.ExtentReportManager"/>
     </listeners>
     <test thread-count="5" name="Test">
         <parameter name="os" value="Windows"/>

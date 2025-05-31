@@ -54,7 +54,7 @@ public class TC003_LoginDDT extends BaseClass {
             MyAccountPage myAccountPage = new MyAccountPage(driver);
             boolean target = myAccountPage.isMyAccountPageExists();
 
-
+            log.info("****Checking validations****** ");
 
 
             if (exp.equalsIgnoreCase("Valid")) {

@@ -22,7 +22,7 @@ public class TC002_LoginTest extends BaseClass {
             loginPage.setPassword(prop.getProperty("password"));
             loginPage.setEmail(prop.getProperty("email"));
 
-            log.info("****Setting property values****");
+            //log.info("****Setting property values****");
 
             loginPage.clickLogin();
 

@@ -22,6 +22,7 @@ public class HomePage extends BasePage{
     public void clickMyAccount()
     {
         click(linkMyAccount);
+        //test
     }
 
     public void clickRegister()

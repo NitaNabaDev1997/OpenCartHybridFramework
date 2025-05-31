@@ -80,6 +80,7 @@ public class AccountRegistrationPage extends BasePage{
 
         //sol2
         //btnContinue.submit();
+        //test
 
         //sol3
         //Actions act=new Actions(driver);

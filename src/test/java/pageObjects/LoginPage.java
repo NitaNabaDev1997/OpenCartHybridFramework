@@ -18,6 +18,7 @@ public class LoginPage extends BasePage{
     @FindBy(xpath = "//input[@value='Login']")
     WebElement btnLogin;
 
+    //test
 
     public void setEmail(String email) {
         txtEmailAddress.sendKeys(email);

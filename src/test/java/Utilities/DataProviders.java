@@ -35,7 +35,10 @@ public class DataProviders {
 	}
 	
 	//DataProvider 2
-	
+	public String [][]  getData1() throws IOException {
+		return new String[0][0];
+	}
+
 	//DataProvider 3
 	
 	//DataProvider 4

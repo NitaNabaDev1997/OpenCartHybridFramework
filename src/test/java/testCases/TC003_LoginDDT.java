@@ -15,7 +15,7 @@ public class TC003_LoginDDT extends BaseClass {
 
 
 
-    public int getCurrentRow(String email) {
+/*    public int getCurrentRow(String email) {
         try {
             String path = ".\\testData\\Opencart_LoginData.xlsx";
             ExcelUtility xlutil = new ExcelUtility(path);
@@ -30,16 +30,16 @@ public class TC003_LoginDDT extends BaseClass {
             e.printStackTrace();
         }
         return -1;
-    }
+    }*/
 
 
     @Test(dataProvider = "LoginData",dataProviderClass = DataProviders.class,groups="Datadriven")
     public void verify_loginddt(String email, String pwd,String exp) throws IOException {
 
         String path=".\\testData\\Opencart_LoginData.xlsx";//taking xl file from testData
-        String result="";
+        //String result="";
         ExcelUtility xlutil=new ExcelUtility(path);
-        int rowNum = getCurrentRow(email);
+        // rowNum = getCurrentRow(email);
         log.info("****Starting TC003_LoginDDT****** ");
         try {
             HomePage hm = new HomePage(driver);
@@ -54,16 +54,16 @@ public class TC003_LoginDDT extends BaseClass {
             MyAccountPage myAccountPage = new MyAccountPage(driver);
             boolean target = myAccountPage.isMyAccountPageExists();
 
-
+            log.info("****Checking validations****** ");
 
 
             if (exp.equalsIgnoreCase("Valid")) {
                 if (target == true) {
                     myAccountPage.clickLogout();
                     Assert.assertTrue(true);
-                    result = "Pass";
+                   // result = "Pass";
                 } else {
-                    result = "Fail";
+                    //result = "Fail";
                     Assert.assertTrue(false);
 
                 }
@@ -72,12 +72,12 @@ public class TC003_LoginDDT extends BaseClass {
             if (exp.equalsIgnoreCase("Invalid")) {
                 if (target == true) {
                     myAccountPage.clickLogout();
-                    result = "Fail";
+                    //result = "Fail";
                     Assert.assertTrue(false);
 
                 } else {
                     Assert.assertTrue(true);
-                    result = "Pass";
+                   // result = "Pass";
                 }
             }
 
@@ -85,15 +85,15 @@ public class TC003_LoginDDT extends BaseClass {
         }
         catch (Exception e)
         {
-            try {
+          /*  try {
                 xlutil.setCellData("Sheet1", rowNum, 3, "Error");
             } catch (IOException ex) {
                 ex.printStackTrace();
-            }
+            }*/
             Assert.fail();
         }
         finally {
-            xlutil.setCellData("Sheet1", rowNum, 3, result);
+           // xlutil.setCellData("Sheet1", rowNum, 3, result);
             log.info("****Finished TC003_LoginDDT****** ");
         }
 

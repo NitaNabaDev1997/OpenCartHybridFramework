@@ -18,7 +18,7 @@ public class BasePage {
         wait= new WebDriverWait(driver, Duration.ofSeconds(20));
         PageFactory.initElements(driver,this);
     }
-
+//test
     public void click(WebElement element)
     {
         try

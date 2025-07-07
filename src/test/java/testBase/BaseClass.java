@@ -31,7 +31,7 @@ import static Utilities.WebDriverUtility.*;
 
 public class BaseClass {
 
-    public static WebDriver driver;
+    public WebDriver driver;
     public Logger log;
     public Properties prop;
     @BeforeClass(groups={"Regression","Master","Sanity","Datadriven"})
@@ -138,7 +138,7 @@ public class BaseClass {
 
         String timeStamp = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
 
-        TakesScreenshot takesScreenshot = (TakesScreenshot) driver;
+        TakesScreenshot takesScreenshot = (TakesScreenshot) getDriver();
         File sourceFile = takesScreenshot.getScreenshotAs(OutputType.FILE);
 
         String targetFilePath=System.getProperty("user.dir")+"\\screenshots\\" + tname + "_" + timeStamp + ".png";

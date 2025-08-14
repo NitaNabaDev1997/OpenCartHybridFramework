@@ -39,3 +39,6 @@
 2025-08-14 13:19:47 DEBUG TestNG:82 - suiteXmlPath: "D:\OpenCartHybridFramework\crossbrowsertest.xml"
 2025-08-14 13:20:12 INFO  TC002_LoginTest:15 - ****Starting TC002_LoginTest*******
 2025-08-14 13:20:14 INFO  TC002_LoginTest:33 - ****Finished TC002_LoginTest*******
+2025-08-14 13:24:07 DEBUG TestNG:82 - suiteXmlPath: "D:\OpenCartHybridFramework\crossbrowsertest.xml"
+2025-08-14 13:24:10 INFO  TC002_LoginTest:15 - ****Starting TC002_LoginTest*******
+2025-08-14 13:24:12 INFO  TC002_LoginTest:33 - ****Finished TC002_LoginTest*******

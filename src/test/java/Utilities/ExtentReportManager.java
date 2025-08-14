@@ -40,8 +40,9 @@ public class ExtentReportManager implements ITestListener {
 		String currentdatetimestamp=df.format(dt);
 		*/
 
-        String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());// time stamp
-        repName = "Test-Report-" + timeStamp + ".html";
+        /*String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());// time stamp
+        repName = "Test-Report-" + timeStamp + ".html";*/
+        repName = "Test-Report.html";
         sparkReporter = new ExtentSparkReporter(".\\reports\\" + repName);// specify location of the report
 
         sparkReporter.config().setDocumentTitle("opencart Automation Report"); // Title of report

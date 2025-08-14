@@ -4,13 +4,35 @@ import org.openqa.selenium.WebDriver;
 
 public class WebDriverUtility {
 
+    private static WebDriverUtility instance;
+
     private static ThreadLocal<WebDriver> threadLocalDriver = new ThreadLocal<>();
 
-    public static synchronized WebDriver getDriver() {
+    private  WebDriverUtility()
+    {
+
+    }
+
+    public synchronized static WebDriverUtility getSingletonInstance()
+    {
+        if(instance==null)
+        {
+            instance= new WebDriverUtility();
+        }
+        return instance;
+    }
+
+
+
+    public synchronized WebDriver getDriver() {
         return threadLocalDriver.get();
     }
 
-    public static void setDriver(WebDriver driver) {
+    public synchronized void removeDriver()
+    {
+        threadLocalDriver.remove();
+    }
+    public synchronized void setDriver(WebDriver driver) {
         threadLocalDriver.set(driver);
     }
 

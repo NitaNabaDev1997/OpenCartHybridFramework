@@ -1,0 +1,62 @@
+2025-06-23 14:32:29 INFO  TC003_LoginDDT:57 - ****Checking validations****** 
+2025-06-23 14:32:30 INFO  TC003_LoginDDT:97 - ****Finished TC003_LoginDDT****** 
+2025-08-07 21:24:30 DEBUG TestNG:82 - suiteXmlPath: "D:\OpenCartHybridFramework\crossbrowsertest.xml"
+2025-08-07 21:24:31 INFO  Utils:112 - [TestNG] Running:
+  D:\OpenCartHybridFramework\crossbrowsertest.xml
+
+2025-08-07 21:24:37 INFO  TC002_LoginTest:15 - ****Starting TC002_LoginTest*******
+2025-08-07 21:24:38 INFO  TC002_LoginTest:33 - ****Finished TC002_LoginTest*******
+2025-08-07 21:25:09 INFO  TC002_LoginTest:15 - ****Starting TC002_LoginTest*******
+2025-08-07 21:25:12 INFO  TC002_LoginTest:33 - ****Finished TC002_LoginTest*******
+2025-08-07 21:27:56 DEBUG TestNG:82 - suiteXmlPath: "D:\OpenCartHybridFramework\crossbrowsertest.xml"
+2025-08-07 21:27:56 INFO  Utils:112 - [TestNG] Running:
+  D:\OpenCartHybridFramework\crossbrowsertest.xml
+
+2025-08-07 21:28:01 INFO  TC002_LoginTest:15 - ****Starting TC002_LoginTest*******
+2025-08-07 21:28:02 INFO  TC002_LoginTest:33 - ****Finished TC002_LoginTest*******
+2025-08-07 21:28:24 INFO  TC002_LoginTest:15 - ****Starting TC002_LoginTest*******
+2025-08-07 21:28:25 INFO  TC002_LoginTest:33 - ****Finished TC002_LoginTest*******
+2025-08-07 21:28:53 DEBUG TestNG:82 - suiteXmlPath: "D:\OpenCartHybridFramework\crossbrowsertest.xml"
+2025-08-07 21:28:54 INFO  Utils:112 - [TestNG] Running:
+  D:\OpenCartHybridFramework\crossbrowsertest.xml
+
+2025-08-07 21:29:20 INFO  TC002_LoginTest:15 - ****Starting TC002_LoginTest*******
+2025-08-07 21:29:22 INFO  TC002_LoginTest:33 - ****Finished TC002_LoginTest*******
+2025-08-07 21:29:40 INFO  TC002_LoginTest:15 - ****Starting TC002_LoginTest*******
+2025-08-07 21:29:41 INFO  TC002_LoginTest:33 - ****Finished TC002_LoginTest*******
+2025-08-07 21:33:03 DEBUG TestNG:82 - suiteXmlPath: "D:\OpenCartHybridFramework\crossbrowsertest.xml"
+2025-08-07 21:33:04 INFO  Utils:112 - [TestNG] Running:
+  D:\OpenCartHybridFramework\crossbrowsertest.xml
+
+2025-08-07 21:33:08 INFO  TC002_LoginTest:15 - ****Starting TC002_LoginTest*******
+2025-08-07 21:33:08 INFO  TC002_LoginTest:15 - ****Starting TC002_LoginTest*******
+2025-08-07 21:33:09 INFO  TC002_LoginTest:33 - ****Finished TC002_LoginTest*******
+2025-08-07 21:33:10 INFO  TC002_LoginTest:33 - ****Finished TC002_LoginTest*******
+2025-08-07 21:38:42 DEBUG TestNG:82 - suiteXmlPath: "D:\OpenCartHybridFramework\master.xml"
+2025-08-07 21:38:42 INFO  Utils:112 - [TestNG] Running:
+  D:\OpenCartHybridFramework\master.xml
+
+2025-08-07 21:38:48 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-07 21:38:48 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-08-07 21:38:49 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-07 21:38:49 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-08-07 21:38:49 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-07 21:38:49 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-08-07 21:38:49 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-07 21:38:49 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-08-07 21:38:49 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-07 21:38:49 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-08-07 21:38:49 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-07 21:38:49 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-08-07 21:38:49 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-07 21:38:49 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-08-07 21:38:50 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-07 21:38:50 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-08-07 21:38:50 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-07 21:38:50 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-08-07 21:38:50 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-07 21:38:50 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-08-07 21:38:50 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-07 21:38:50 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2025-08-07 21:38:50 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-08-07 21:38:50 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels

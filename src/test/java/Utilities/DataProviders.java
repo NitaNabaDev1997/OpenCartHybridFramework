@@ -8,7 +8,7 @@ public class DataProviders {
 
 	//DataProvider 1
 	
-	@DataProvider(name="LoginData")
+	@DataProvider(parallel = true, name="LoginData")
 	public String [][] getData() throws IOException
 	{
 		String path=".\\testData\\Opencart_LoginData.xlsx";//taking xl file from testData

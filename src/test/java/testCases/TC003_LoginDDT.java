@@ -36,9 +36,9 @@ public class TC003_LoginDDT extends BaseClass {
     @Test(dataProvider = "LoginData",dataProviderClass = DataProviders.class,groups="Datadriven")
     public void verify_loginddt(String email, String pwd,String exp) throws IOException {
 
-        String path=".\\testData\\Opencart_LoginData.xlsx";//taking xl file from testData
+       /* String path=".\\testData\\Opencart_LoginData.xlsx";//taking xl file from testData
         //String result="";
-        ExcelUtility xlutil=new ExcelUtility(path);
+        ExcelUtility xlutil=new ExcelUtility(path);*/
         // rowNum = getCurrentRow(email);
         log.info("****Starting TC003_LoginDDT****** ");
         try {

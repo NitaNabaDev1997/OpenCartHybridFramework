@@ -1,6 +1,7 @@
 package testBase;
 
 
+import Utilities.WebDriverUtility;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.logging.log4j.LogManager;
@@ -14,9 +15,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Parameters;
+import org.testng.annotations.*;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -27,14 +26,14 @@ import java.time.Duration;
 import java.util.Date;
 import java.util.Properties;
 
-import static Utilities.WebDriverUtility.*;
 
 public class BaseClass {
+
 
     public WebDriver driver;
     public Logger log;
     public Properties prop;
-    @BeforeClass(groups={"Regression","Master","Sanity","Datadriven"})
+    @BeforeMethod(groups={"Regression","Master","Sanity","Datadriven"})
     @Parameters({"os","browser"})
         public WebDriver setUp(String os, String browser ) throws IOException {
         FileInputStream fis;
@@ -73,45 +72,54 @@ public class BaseClass {
                         return null;
                 }
 
-            driver=new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"),cap);
+            driver=new RemoteWebDriver(new URL("http://localhost:4444/"),cap);
         }
 
         if(prop.getProperty("execution_environment").equalsIgnoreCase("local")) {
             switch (browser.toLowerCase()) {
                 case "chrome":
-                    setDriver( new ChromeDriver());
+                    WebDriverUtility.getSingletonInstance().setDriver( new ChromeDriver());
                   //  driver = new ChromeDriver();
                 break;
                 case "edge":
-                   setDriver( new EdgeDriver());
+                    WebDriverUtility.getSingletonInstance().setDriver( new EdgeDriver());
                    // driver = new EdgeDriver();
                     break;
                 case "firefox":
-                    setDriver( new FirefoxDriver());
+                    WebDriverUtility.getSingletonInstance().setDriver( new FirefoxDriver());
                     //driver = new FirefoxDriver();
                     break;
                 default:
                     System.out.println("Invalid browser name....");
                     return null;
             }
+            driver=WebDriverUtility.getSingletonInstance().getDriver();
+            driver.manage().deleteAllCookies();
         }
-        //WebDriverUtility.setDriver(driver);
-        getDriver().manage().deleteAllCookies();
-        getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         //driver = WebDriverUtility.getDriver();
-        getDriver().get("https://example.com");
-        getDriver().get(prop.getProperty("appURL1"));
-        getDriver().manage().window().maximize();
-        driver=getDriver();
+        driver.get("https://example.com");
+        driver.get(prop.getProperty("appURL1"));
+        driver.manage().window().maximize();
+
         return driver;
 
     }
 
 
-    @AfterClass(groups={"Regression","Master","Sanity","Datadriven"})
+    @AfterMethod(groups={"Regression","Master","Sanity","Datadriven"})
     public void tearDown()
     {
-        driver.quit();
+        if(driver!=null)
+        {
+            driver.quit();
+        }
+        else if(WebDriverUtility.getSingletonInstance().getDriver()!=null)
+        {
+            WebDriverUtility.getSingletonInstance().getDriver().quit();
+            WebDriverUtility.getSingletonInstance().removeDriver();
+        }
     }
 
     public String randomeString()
@@ -138,7 +146,7 @@ public class BaseClass {
 
         String timeStamp = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
 
-        TakesScreenshot takesScreenshot = (TakesScreenshot) getDriver();
+        TakesScreenshot takesScreenshot = (TakesScreenshot)WebDriverUtility.getSingletonInstance().getDriver();
         File sourceFile = takesScreenshot.getScreenshotAs(OutputType.FILE);
 
         String targetFilePath=System.getProperty("user.dir")+"\\screenshots\\" + tname + "_" + timeStamp + ".png";
